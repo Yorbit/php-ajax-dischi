@@ -6,7 +6,7 @@ const root = new Vue(
         },
         methods: {
             getDiscs: function () {
-                axios.get('http://localhost/php-ajax-dischi/V2/call/call.php')
+                axios.get('../call/call.php')
                     .then((response) => {
                         this.listDisc = response.data;
                         this.filteredCardGenre = this.listDisc;
